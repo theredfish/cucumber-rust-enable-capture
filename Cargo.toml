@@ -1,0 +1,15 @@
+[package]
+name = "cucumber-rust-enable-capture"
+version = "0.1.0"
+authors = ["theredfish <did.julian@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[test]]
+name = "cucumber"
+harness = false
+
+[dev-dependencies]
+cucumber_rust = { version = "0.8.4", features = ["macros"] }
+tokio = { version = "1.1.1", features = ["macros", "rt-multi-thread"] }
